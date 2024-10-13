@@ -32,7 +32,7 @@ def pomodoro_timer(work_time, break_time):
     break_placeholder.write('Break!')
     for i in range(break_seconds - 59):
         time.sleep(1)
-        break_placeholder.write(f'{int(break_seconds - i) / 60} minute(s) left')
+        break_placeholder.write(f'{int((break_seconds - i) / 60)} minute(s) left')
     for i in range(60):
         time.sleep(1)
         break_placeholder.write(f'{(59 - i)} second(s) left')
